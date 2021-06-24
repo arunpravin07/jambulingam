@@ -59,7 +59,7 @@
 <server-group>${jbGroupName}</server-group>
 </server-groups>
 </domain>
-</configuration>
+
             </configuration>
                     </execution>
                 </executions>
