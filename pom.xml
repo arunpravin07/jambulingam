@@ -43,14 +43,14 @@
                 <configuration>
                   <configuration>
             <hostname>${jboss.hostname}</hostname>
-            <port>8080</port>
+            <port>9990</port>
             <username>${jboss.user}</username>
             <password>${jboss.pass}</password>
             <timeout>5000</timeout>
         </configuration>
                     <domain>
                         <server-groups>
-                            <server-group>main-server-group</server-group>
+                            <server-group>server-group=main-server-group</server-group>
                         </server-groups>
                           <profiles>
                             <profile>default</profile>
