@@ -18,11 +18,7 @@
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.jboss.remoting/jboss-remoting -->
-<dependency>
-    <groupId>org.jboss.remoting</groupId>
-    <artifactId>jboss-remoting</artifactId>
-    <version>5.0.16.Final-redhat-00001</version>
-</dependency>
+
 
   </dependencies>
    
