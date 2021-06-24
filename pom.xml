@@ -33,27 +33,28 @@
 
           
            <plugin>
-                <groupId>org.jboss.as.plugins</groupId>
-                <artifactId>jboss-as-maven-plugin</artifactId>
-                <version>7.9.Final</version>
-                
-             <executions>
-                    <execution>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-
-
-<configuration>
-<force>true</force>
-
-<hostname>127.0.0.1</hostname>
-<port>9990</port>
-<username>arun</username>
-<password>arun*1</password>
-
-<timeout>200000</timeout>
+        <groupId>org.jboss.as.plugins</groupId>
+        <artifactId>jboss-as-maven-plugin</artifactId>
+        <version>7.9.Final</version>
+        <configuration>
+            <hostname>localhost</hostname>
+            <port>9990</port>
+            <username>arun</username>
+            <password>arun*1</password>
+            <name>my-app-1.0-SNAPSHOT</name>
+            <filename>${project.build.finalName}.war</filename>
+       
+        </configuration>
+        <executions>
+            <execution>
+               
+                <phase>install</phase>
+                <goals>
+                    <goal>deploy</goal>
+                </goals>
+            </execution>
+        </executions>
+    
 <domain>
 <!-- This configuration is need only if you running JBoss in domain mode -->
 <server-groups>
@@ -61,13 +62,7 @@
 <server-group>server-one</server-group></server-group>
 </server-groups>
 </domain>
-
-            </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-       
-          
+            </plugin> 
 </plugins>
 </build>
 </project>
