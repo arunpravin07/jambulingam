@@ -43,17 +43,23 @@
                         <goals>
                             <goal>deploy</goal>
                         </goals>
+
+
 <configuration>
- <force>true</force>
-            <jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname> 
-  <!-- Where to deploy. -->
-<jboss-as.deploy.port>9999</jboss-as.deploy.port>
-<jboss-as.deploy.user>arun</jboss-as.deploy.user>
-<jboss-as.deploy.pass>arun*1</jboss-as.deploy.pass>
-<plugin.war.warName>arun</plugin.war.warName>
-<fileNames>
-<fileName>target\my-app-1.0-SNAPSHOT.war</fileName>
-</fileNames>
+<force>true</force>
+<hostname>localhost</hostname>
+<port>9990</port>
+<username>arun</username>
+<password>arun*1</password>
+<filename>${project.build.finalName}.war</filename>
+<timeout>100000</timeout>
+<domain>
+<!-- This configuration is need only if you running JBoss in domain mode -->
+<server-groups>
+<server-group>${jbGroupName}</server-group>
+</server-groups>
+</domain>
+</configuration>
             </configuration>
                     </execution>
                 </executions>
