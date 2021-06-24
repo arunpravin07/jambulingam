@@ -42,6 +42,13 @@
                         <goals>
                             <goal>deploy</goal>
                         </goals>
+
+ <configuration>
+                <hostname>localhost</hostname>
+                <port>9999</port>
+                <username>arun</username>
+                <password>arun*1</password>
+            </configuration>
                     </execution>
                 </executions>
             </plugin>
