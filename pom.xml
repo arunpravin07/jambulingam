@@ -56,7 +56,7 @@
 <domain>
 <!-- This configuration is need only if you running JBoss in domain mode -->
 <server-groups>
-<server-group>${jbGroupName}</server-group>
+<server-group>main-server-group</server-group>
 </server-groups>
 </domain>
 
