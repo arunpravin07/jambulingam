@@ -52,11 +52,7 @@
                         <server-groups>
                             <server-group>server-group=main-server-group</server-group>
                         </server-groups>
-                          <profiles>
-                            <profile>default</profile>
-                            <profile>ha</profile>
-                            <profile>full-ha</profile>
-                        </profiles>
+                          
                     </domain>
                   
                 </configuration>
@@ -64,7 +60,7 @@
            <execution>
                         <id>deploy</id>
                        
-                      
+                      <goals>
                             <goal>deploy</goal>
                         </goals>
               <phase>install</phase>
