@@ -43,7 +43,7 @@
                 <configuration>
                   <configuration>
             <hostname>${jboss.hostname}</hostname>
-            <port>${jboss.port}</port>
+            <port>8080</port>
             <username>${jboss.user}</username>
             <password>${jboss.pass}</password>
             <timeout>5000</timeout>
