@@ -51,7 +51,7 @@
                     <domain>
                         <server-groups>
                             <server-group>main-server-group</server-group>
-                          <servername
+                       
                         </server-groups>
                           
                     </domain>
