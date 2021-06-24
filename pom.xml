@@ -34,31 +34,20 @@
 </plugin>
 
           
-           <plugin>
-        <groupId>org.jboss.as.plugins</groupId>
-        <artifactId>jboss-as-maven-plugin</artifactId>
-        <version>7.9.Final</version>
-        <configuration>
-           <jboss-as.deploy.hostname>localhost</jboss-as.deploy.hostname> 
-  <!-- Where to deploy. -->
-<jboss-as.deploy.port>9990</jboss-as.deploy.port>
-<jboss-as.deploy.user>arun</jboss-as.deploy.user>
-<jboss-as.deploy.pass>arun*1</jboss-as.deploy.pass>
-            <name>my-app-1.0-SNAPSHOT</name>
-            <fileNames>
-                    <fileName>target/${plugin.war.warName}.war</fileName>
-                </fileNames>
-       
-           <domain>
-      <server-groups>
-        <server-group>--server-groups=other-server-group</server-group>
-      </server-groups>
-    </domain>
-          
-        </configuration>
+           
       
-    
-
+     <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>7.9.Final</version>
+                <configuration>
+                    <domain>
+                        <server-groups>
+                            <server-group>main-server-group</server-group>
+                        </server-groups>
+                    </domain>
+                </configuration>
+           
             </plugin> 
 </plugins>
 </build>
