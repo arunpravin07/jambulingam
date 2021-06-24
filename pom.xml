@@ -36,14 +36,15 @@
                 <groupId>org.jboss.as.plugins</groupId>
                 <artifactId>jboss-as-maven-plugin</artifactId>
                 <version>7.9.Final</version>
-                <executions>
+             <configuration>   
+             <executions>
                     <execution>
                         <phase>install</phase>
                         <goals>
                             <goal>deploy</goal>
                         </goals>
 
- <configuration>
+ <force>true</force>
                 <hostname>localhost</hostname>
                 <port>9999</port>
                 <username>arun</username>
