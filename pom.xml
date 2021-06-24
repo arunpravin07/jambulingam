@@ -50,7 +50,7 @@
         </configuration>
                     <domain>
                         <server-groups>
-                            <server-group>server-group=main-server-group</server-group>
+                            <server-group>main-server-group</server-group>
                         </server-groups>
                           
                     </domain>
