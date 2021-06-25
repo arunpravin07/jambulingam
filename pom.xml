@@ -43,8 +43,8 @@
                 <groupId>org.jboss.as.plugins</groupId>
                 <artifactId>jboss-as-maven-plugin</artifactId>
                 <version>7.9.Final</version>
-                <configuration>
-                  <configuration>
+               
+                  
             <hostname>${jboss.hostname}</hostname>
             <port>9999</port>
             <username>${jboss.user}</username>
