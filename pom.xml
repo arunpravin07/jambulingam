@@ -45,10 +45,10 @@
                 <version>7.9.Final</version>
                
                   <configuration>
-            <hostname>${jboss.hostname}</hostname>
+            <hostname>localhost</hostname>
             <port>9999</port>
-            <username>${jboss.user}</username>
-            <password>${jboss.pass}</password>
+            <username>arun</username>
+            <password>welcome*1</password>
             <timeout>5000</timeout>
 </configuration>
        <executions>
