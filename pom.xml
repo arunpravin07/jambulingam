@@ -51,16 +51,7 @@
             <password>welcome*1</password>
             <timeout>5000</timeout>
 </configuration>
-       <executions>
-           <execution>
-                        <id>deploy</id>
-                       
-                      <goals>
-                            <goal>deploy</goal>
-                        </goals>
-              <phase>install</phase>
-                    </execution>
-                </executions>
+       
             </plugin> 
 </plugins>
 </build>
